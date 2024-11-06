@@ -1,0 +1,14 @@
+<div class="flex flex-col justify-center items-center w-full h-full">
+  <h1 class="text-4xl">Connexion</h1>
+  <form (submit)="onSubmit()" [formGroup]="form" class=" w-full flex flex-col justify-center items-center h-full">
+    <mat-form-field  >
+      <mat-label>Email</mat-label>
+      <input formControlName="username" type="email" matInput>
+    </mat-form-field>
+    <mat-form-field >
+      <mat-label>Password</mat-label>
+      <input formControlName="password" type="password" matInput>
+    </mat-form-field>
+    <button class="bg-red-600d" mat-flat-button>Connexion</button>
+  </form>
+</div>
