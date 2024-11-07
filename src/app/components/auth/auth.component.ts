@@ -39,7 +39,8 @@ export class AuthComponent {
       password:this.password.value
     }
 
-    this.AuthService.login(login).subscribe(value => console.log(value));
+    this.AuthService.login(login).subscribe((r) => {
+    });
 
   }
 }
